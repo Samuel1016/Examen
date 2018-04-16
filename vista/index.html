@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Alumnos</title>
+  <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+  <script type="text/javascript" src="../js/script.js"></script>
+  <style>
+  </style>
+
+</head>
+
+<body>
+  <center>
+    <div>
+      <div >
+        <div class="caj-sec">
+          <div class="caj-esp"></div>
+          <div class="caj-nom">
+            <section>Nombres:<input class="caj" type="text" id="nom"></section>
+          </div>
+          <div class="caj-ape">
+            <section>Apellidos: <input class="caj" type="text" id="ape"></section>
+          </div>
+          <div class="caj-dir">
+            <section>Direccion: <input class="caj" type="text" id="dir"></section>
+          </div>
+          <div class="caj-btn">
+            <section>
+              <input class="btn" type="button" id="boton3" onclick="mostrar()" value="LISTAR">
+              <input class="btn" type="button" id="boton" onclick="registro()" value="ENVIAR">
+              <input class="btn" type="button" id="btn-mod" onclick="modificar()" value="MODIFICAR">
+            </section>
+          </div>
+        </div>
+
+        <div class="caj-trans"></div>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <td>#</td>
+                <td>Nombres y Apellidos: </td>
+                <td>Direccion:</td>
+                <td>Accion:</td>
+              </tr>
+            </thead>
+
+            <tbody id="tb">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <center/>
+    <script type="text/javascript">
+      ocultar();
+
+      function ocultar() {
+        var btn = document.getElementById("btn-mod");
+        btn.style.display = "none";
+      }
+    </script>
+
+    <body/>
+    <html/>
